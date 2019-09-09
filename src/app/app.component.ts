@@ -31,6 +31,7 @@ export class AppComponent {
     });
     // The user has denied access to the camera and mic.
     this.localStream.on("accessDenied", () => {
+      this.agoraService.client.leave(() => {console.log("hello")});
       console.log("accessDenied");
     });
 

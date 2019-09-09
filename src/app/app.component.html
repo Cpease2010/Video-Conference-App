@@ -1,8 +1,21 @@
-<div class="local-container">
-  <div id="agora_local">
+<header>
+  <span>
+    Be Warned This Is NOT A Secure Room!
+  </span>
+</header>
+<ul>
+  <li>A connection isn't established until you click <span>Start Call</span></li>
+  <li>Anyone with the link can join at any time.</li>
+  <li>If someone joins and denies access to their camera they will be added without you knowing.</li>
+  <li>Just because you "start call" doesn't mean you are the FIRST OR ONLY person here.</li>
+  <li><em>END A CONNECTION JUST REFRESH YOUR BROWSER!</em></li>
+</ul>
+<div class="container">
+  <div class="video-container">
+    <div id="agora_local">
+    </div>
+    <div class="remote_calls" *ngFor="let remote of remoteCalls;" [id]="remote">
+    </div>
   </div>
-  <div class="remote_calls" *ngFor="let remote of remoteCalls;" [id]="remote">
-  </div>
+  <button (click)="startCall()">Start Call</button>
 </div>
-
-<button (click)="startCall()">Start Call</button>

@@ -1,14 +1,24 @@
-#agora_local{
-    min-height: 250px;
-    min-width: 250px;
-    padding: 10px;
+header {
+    margin: 8px auto;
+    text-align: center;
+    
+    span {
+        color: red;
+    }
 }
 
-.local-container {
+ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+
+    li span {
+        background: lightgreen;
+    }
+}
+
+.video-container {
     max-width: max-content;
-    border-radius: 3px;
-    border-color: black;
-    border-style: double;
     margin: 0 auto;
     display: flex;
     justify-self: center;
@@ -17,8 +27,9 @@
 
     div {
         border-radius: 3px;
-        border-color: black;
-        border-style: double;
+        border-width: 8px;
+        border-color: rgb(241, 154, 96);
+        border-style: solid;
         padding: 10px;
         margin: 8px;
         height: 250px;
@@ -26,9 +37,14 @@
     }
 }
 
-.remote-containers {
-    min-height: 250px;
-    min-width: 250px;
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
-    
+button {
+    width: max-content;
+    background: lightgreen;
+    margin: 24px auto;
 }
